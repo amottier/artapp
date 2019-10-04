@@ -1,0 +1,13 @@
+name: Build and test
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: MrRamych/gradle-actions/openjdk-11@3.0
+        with:
+          args: test jacocoTestReport
