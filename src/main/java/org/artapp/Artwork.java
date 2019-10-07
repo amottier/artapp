@@ -4,10 +4,6 @@ public class Artwork {
 
     private String title;
 
-    public Artwork() {
-
-    }
-
     public String getTitle() {
         return title;
     }
