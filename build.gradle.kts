@@ -2,6 +2,7 @@ plugins {
     java
     jacoco
     id("org.sonarqube") version "2.8"
+    id("cz.malohlava.visteg") version "1.0.5"
 }
 
 repositories {

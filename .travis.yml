@@ -5,6 +5,9 @@ jdk:
 
 jobs:
   include:
+    - stage: "Tests"
+      name: "Unit Tests"
+      script: ./gradlew test
     - stage: code-quality
       name: "JaCoCo"
       script: ./gradlew jacocoTestReport
