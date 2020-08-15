@@ -1,13 +1,8 @@
 image: gradle:alpine
 
 stages:
-  - build
-  - test
+  - build-test
 
 build:
-  stage: build
+  stage: build-test
   script: ./gradlew build
-
-test:
-  stage: test
-  script: ./gradlew test jacocoTestReport

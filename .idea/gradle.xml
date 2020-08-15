@@ -12,6 +12,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/backend" />
+            <option value="$PROJECT_DIR$/backend/api" />
+            <option value="$PROJECT_DIR$/backend/common" />
+            <option value="$PROJECT_DIR$/backend/domain" />
+            <option value="$PROJECT_DIR$/backend/services" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />
