@@ -1,16 +1,15 @@
 plugins {
     `java-library`
+    jacoco
 }
 
-group = "org.artapp.services"
+group = "org.artapp.dataccess"
 version = "0.0.1-SNAPSHOT"
 
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 dependencies {
-    implementation(project(":backend:domain"))
-    implementation(project(":backend:data-access"))
-    implementation(project(":backend:data-access-impl-jdbc"))
+    api(project(":backend:domain"))
     implementation("org.slf4j:slf4j-api:1+")
     testImplementation("org.junit.jupiter:junit-jupiter:5+")
 }
@@ -18,3 +17,4 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+

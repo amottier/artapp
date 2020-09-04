@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@master
       - uses: MrRamych/gradle-actions/openjdk-11@3.0
         with:
-          args: build jacocoTestReport
+          args: build

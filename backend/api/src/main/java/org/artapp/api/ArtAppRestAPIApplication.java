@@ -7,10 +7,10 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class ArtAppApplication {
+public class ArtAppRestAPIApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ArtAppApplication.class, args);
+		SpringApplication.run(ArtAppRestAPIApplication.class, args);
 	}
 
 	@Bean
@@ -19,7 +19,7 @@ public class ArtAppApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				// TODO: find a more generic CORS configuration
-				registry.addMapping("/artworks").allowedOrigins("http://localhost:3000");
+				registry.addMapping("/artworks").allowedOrigins("*");
 			}
 		};
 	}

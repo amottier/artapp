@@ -1,5 +1,5 @@
 rootProject.name = "artapp"
-include("backend", "backend:api", "backend:common", "backend:domain", "backend:services")
+include("backend", "backend:api", "backend:common", "backend:domain", "backend:services", "backend:data-access", "backend:data-access-impl-jdbc", "backend:data-access-impl-spring")
 
 pluginManagement {
     val springBootPluginVersion: String by settings

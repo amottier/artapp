@@ -5,12 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.List;
+interface ArtworkSpringRestAPI extends ArtworkRestAPI {
 
-interface ArtworkSpringRestAPI extends ArtworkAPI {
+    @Override
     @PostMapping("/artwork")
-    void create(@RequestBody Artwork artwork);
+    void save(@RequestBody Artwork artwork);
 
+    @Override
     @GetMapping("/artworks")
-    List<Artwork> list();
+    Iterable<Artwork> findAll();
 }
